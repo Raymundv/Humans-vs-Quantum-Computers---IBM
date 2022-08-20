@@ -1,0 +1,48 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://fonts/Redkost Comic.otf" type="DynamicFontData" id=1]
+
+[sub_resource type="DynamicFont" id=1]
+size = 150
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 40
+font_data = ExtResource( 1 )
+
+[sub_resource type="GDScript" id=3]
+script/source = "extends Button
+
+func _on_buttontitleplay_pressed():
+	get_tree().change_scene(\"res://Level.tscn\")
+"
+
+[node name="Control" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = 1.0
+margin_top = 4.0
+margin_right = 1024.0
+margin_bottom = 601.0
+
+[node name="Label" type="Label" parent="."]
+margin_left = 273.0
+margin_top = 93.0
+margin_right = 738.0
+margin_bottom = 258.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 1 )
+text = "QMaze"
+align = 1
+valign = 1
+
+[node name="button-title-play" type="Button" parent="."]
+margin_left = 353.0
+margin_top = 317.0
+margin_right = 646.0
+margin_bottom = 396.0
+custom_fonts/font = SubResource( 2 )
+text = "Click to Play"
+script = SubResource( 3 )
