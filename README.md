@@ -1,6 +1,6 @@
 **Since we contain big file to upload - LFS does not support large file upload
 With permission, we upload the code to a main repository.**
-[Click here to the game！]https://github.com/hanzili/QMaze
+**[Click here to the game！](https://github.com/hanzili/QMaze)**
 
 <hr>
 
